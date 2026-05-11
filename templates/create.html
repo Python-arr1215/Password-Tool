@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Create</title>
+    <link href="static/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>Password Generator</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/check.html">Check</a>
+            <a href="/create.html">Create</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="card">
+
+            <h2>Create Password</h2>
+
+            <form method="POST">
+
+                <div class="checkbox-group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="types"
+                            value="小文字"
+                        >
+                        小文字
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="types"
+                            value="大文字"
+                        >
+                        大文字
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="types"
+                            value="数字"
+                        >
+                        数字
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="types"
+                            value="記号"
+                        >
+                        記号
+                    </label>
+
+                </div>
+
+                <input
+                    type="number"
+                    name="length"
+                    value="12"
+                    min="4"
+                    max="64"
+                >
+
+                <button type="submit">
+                    Generate
+                </button>
+
+            </form>
+
+            {% if password %}
+
+            <div class="result-area">
+
+                <h3>Generated Password</h3>
+
+                <p class="result-text">
+                    {{ password }}
+                </p>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

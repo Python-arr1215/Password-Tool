@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 140px;
+}
+
+.container {
+    width: 500px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+
+    border: 1px solid black;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+.result-area {
+    margin-top: 30px;
+}
+
+.result-text {
+    font-size: 18px;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.card {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}

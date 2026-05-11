@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Check</title>
+    <link href="static/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Password Checker</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/check.html">Check</a>
+            <a href="/create.html">Create</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Check Your Password</h2>
+            <p class="description">
+                Enter your password to check if it has been leaked.
+            </p>
+            <form method="POST">
+                <input
+                    type="text"
+                    name="password"
+                    placeholder="Enter password..."
+                    required
+                >
+                <button type="submit">
+                    Check Password
+                </button>
+            </form>
+            {% if result %}
+            <div class="result-area">
+                <h3>Result</h3>
+                <p class="result-text">
+                    {{ result }}
+                </p>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+</div>
+</body>
+</html>
