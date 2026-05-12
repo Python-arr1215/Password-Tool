@@ -95,7 +95,9 @@ project/
 │   └── create.html
 │
 └── static/
-    └── style.css
+    ├── style.css
+    ├── favicon.ico
+    └── work01-hover.jpg
 ```
 
 ## Run Application
